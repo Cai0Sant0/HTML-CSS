@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+       body {
+        background-color: gray;
+        font-family: sans-serif;
+       }
+       header {
+        background-color: white;
+        padding: 10px;
+        margin: 15px 10px ;
+        text-align: center;
+        border: 6px solid black;
+        border-radius: 10px;
+       }
+       nav {
+        background-color: gray;
+        padding: 5px;
+        box-shadow: 5px 3px 7px 1px #00000080;
+       }
+       nav > a {
+        text-decoration: none;
+        color: white;
+        font-weight: lighter;
+        margin-right: 10px;
+       }
+       nav > a:hover{
+        text-decoration: underline;
+        color: red;
+       }
+       
+       article {
+        background-color: white;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px black;
+        margin-top: 10px;
+       }
+       aside {
+        background-color: white;
+        border: 2px solid black;
+        margin-top: 5px;
+       }
+       footer {
+        background-color: black;
+        color: white;
+        margin: 20px;
+        padding: 2px;
+        text-align: center;
+       }
+       h1 {
+        text-shadow: 1px 0px 1px black;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a> 
+        </nav>
+    </header>
+    <main>
+         <section>
+            <article>
+                <h2>Noticía sobre o Brasil</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quos vitae perspiciatis unde cum commodi dignissimos voluptates molestiae aperiam enim quasi voluptate tempore, error, sapiente dolore accusamus reprehenderit similique provident!</p>
+            </article>
+            <aside>
+                <p>artigo escrito por José da Silva</p>
+            </aside>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Caioba</p>
+    </footer>
+</body>
+</html>
