@@ -13,6 +13,7 @@
             border: 1.3px solid black;
             border-collapse: collapse;
             width: 450px;
+            position: absolute;
         }
         td, th {
             border: 1px solid black;
@@ -24,13 +25,19 @@
             font-weight: bold;
             font-size: 1.5em;
         }
+        thead > tr > th {
+            background-color: gray;
+            color: white;
+            position: sticky;
+            top: -1px;
+        }
         tbody > tr:nth-child(odd){ /*odd = ímpar, vc pode escrever isso ou 2n-18*/
             background-color: white;
         }
         tbody > tr:nth-child(even){ /* even = par, vc pode escrever isso ou 2n*/
             background-color: lightgray;
         }
-        thead, tfoot {
+        tfoot {
             background-color: gray;
             color: white;
         }
