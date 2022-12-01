@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios de Tabelas</title>
+    <style>
+        Table, td, th {
+            border: 1px solid black;border-collapse: collapse;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption {
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .cnome {
+            background-color: gray;
+        }
+        .cid {
+            background-color: gray;
+        }
+       .oi {
+        background-color: gray;
+       }
+       .legal {
+        background-color: yellow;
+       }
+       .io {
+        background-color: gray;
+       }
+    </style>
+</head>
+<body>
+    <h1>usando Colgroup</h1>
+    <table>
+        <colgroup> <!--Serve para selecionar as colunas de forma mais eficiente-->
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cid">
+            <col class="cprofi">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th>Nome</th>
+            <th>Sexo</th>
+            <th>Idade</th>
+            <th>Profissão</th>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>56</td>
+            <td>Desempregada</td>
+        </tr>
+        <tr>
+            <td>Caio</td>
+            <td>M</td>
+            <td>16</td>
+            <td>Programador</td>
+        </tr>
+    </table>
+    <table>
+        <colgroup> 
+            <col class="oi">
+            <col class="legal" span="2"><!--Esse span serve para selecionar duas ou mais colunas--> 
+            <col class="io">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th>Nome</th>
+            <th>Sexo</th>
+            <th>Idade</th>
+            <th>Profissão</th>
+        </tr>
+        <tr>
+            <td>Mariana</td>
+            <td>F</td>
+            <td>90</td>
+            <td>Aposentada</td>
+        </tr>
+        <tr>
+            <td>Carlos</td>
+            <td>M</td>
+            <td>34</td>
+            <td>Programador</td>
+        </tr>
+    </table>
+
+</body>
+</html>
